@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a92855bb99b518945a48e81e4e7591aa
+  - enabled: 1
+    path: Assets/Scenes/Rumah.unity
+    guid: 2abf9c4ab1901344d9bcd5850f612e9d
+  - enabled: 1
+    path: Assets/Scenes/PerumBelanda.unity
+    guid: 6ae85ec3e97bd294fa8fa60e901a2b41
+  - enabled: 1
+    path: Assets/Scenes/JembatanMerah.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/HotelMajapahit.unity
+    guid: 754c07ea028d915499b1576e347a8957
+  m_configObjects: {}

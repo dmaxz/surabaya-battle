@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponManager : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class WeaponManager : MonoBehaviour
 
     [SerializeField] private int grenadeCounter;
 
-
+    public List<Texture> weaponUI;
+    public RawImage weaponCanvasImage;
 
 
     private void Awake()
@@ -22,6 +24,7 @@ public class WeaponManager : MonoBehaviour
             weapons.Add(g);
         }
         EnableGun("bolt");
+        weaponCanvasImage.texture = weaponUI[0];
     }
 
     // Update is called once per frame
@@ -35,10 +38,12 @@ public class WeaponManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             EnableGun("bolt");
+            weaponCanvasImage.texture = weaponUI[0];
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             EnableGun("grenade");
+            weaponCanvasImage.texture = weaponUI[1];
         }
     }
 

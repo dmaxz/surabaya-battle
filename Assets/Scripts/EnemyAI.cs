@@ -72,12 +72,12 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        Debug.Log("Chasing");
+        //Debug.Log("Chasing");
         agent.SetDestination(player.position);
     }
     private void AttackPlayer()
     {
-        Debug.Log("Attacking");
+        //Debug.Log("Attacking");
         agent.SetDestination(transform.position);
 
         timeBetweenAttacks -= Time.deltaTime;
@@ -172,7 +172,7 @@ public class EnemyAI : MonoBehaviour
 
     bool CalculateKnowsPlayer(bool inSightRange, bool seesPlayer, bool remembersPlayer)
     {
-        Debug.Log($"isSightRange: {inSightRange}, seesPlayer: {seesPlayer}, remembersPlayer: {remembersPlayer}");
+        Debug.Log($"{transform.gameObject.name}, isSightRange: {inSightRange}, seesPlayer: {seesPlayer}, remembersPlayer: {remembersPlayer}");
         if (!inSightRange) // jika player berada di luar area sight
         {
             if (remembersPlayer) // jika masih ingat player
